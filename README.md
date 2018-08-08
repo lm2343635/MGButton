@@ -13,7 +13,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Supported porperties
 
-- cornerRaduis (CGFloat)
+- cornerRadius (CGFloat)
 
 ## Installation
 
