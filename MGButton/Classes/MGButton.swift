@@ -26,21 +26,21 @@
 import UIKit
 
 struct AssociatedKeys {
-    static var cornerRaduis = "MGButton.cornerRaduis"
+    static var cornerRadius = "MGButton.cornerRadius"
 }
 
 extension UIButton {
     
-    @IBInspectable public var cornerRaduis: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
-            guard let cornerRaduis = objc_getAssociatedObject(self, &AssociatedKeys.cornerRaduis) as? CGFloat else {
+            guard let cornerRadius = objc_getAssociatedObject(self, &AssociatedKeys.cornerRadius) as? CGFloat else {
                 return 0
             }
-            return cornerRaduis
+            return cornerRadius
         }
         
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.cornerRaduis, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &AssociatedKeys.cornerRadius, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             
             self.layer.cornerRadius = newValue
         }
