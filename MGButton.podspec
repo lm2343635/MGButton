@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MGButton'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MGButton.'
+  s.summary          = 'A simple UIButton extension.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+MGButton is a simple UIButton extension, it helps developers to set some porperty in the storyboard directly.
                        DESC
 
   s.homepage         = 'https://github.com/lm2343635/MGButton'
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/lm2343635/MGButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'MGButton/Classes/**/*'
   

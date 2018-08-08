@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/MGButton.svg?style=flat)](https://cocoapods.org/pods/MGButton)
 [![Platform](https://img.shields.io/cocoapods/p/MGButton.svg?style=flat)](https://cocoapods.org/pods/MGButton)
 
+MGButton is a simple UIButton extension, it helps developers to set some porperty in the storyboard directly.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Supported porperties
+
+- cornerRaduis (CGFloat)
 
 ## Installation
 
