@@ -27,6 +27,9 @@ import UIKit
 
 struct AssociatedKeys {
     static var cornerRadius = "MGButton.cornerRadius"
+    static var normalBackgroundColor = "MGButton.normalBackgroundColor"
+    static var disabledBackgroundColor = "MGButton.disabledBackgroundColor"
+    
 }
 
 extension UIButton {
@@ -44,6 +47,51 @@ extension UIButton {
             
             self.layer.cornerRadius = newValue
         }
+    }
+    
+    @IBInspectable public var normalBackgroundColor: UIColor? {
+        get {
+            guard let normalBackgroundColor = objc_getAssociatedObject(self, &AssociatedKeys.normalBackgroundColor) as? UIColor else {
+                return nil
+            }
+            return normalBackgroundColor
+        }
+        
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.normalBackgroundColor, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            guard let color = normalBackgroundColor else {
+                return
+            }
+            setBackgroundImage(image(with: color), for: .normal)
+        }
+    }
+    
+    @IBInspectable public var disabledBackgroundColor: UIColor? {
+        get {
+            guard let color = objc_getAssociatedObject(self, &AssociatedKeys.disabledBackgroundColor) as? UIColor else {
+                return nil
+            }
+            return color
+        }
+        
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.disabledBackgroundColor, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            guard let color = disabledBackgroundColor else {
+                return
+            }
+            setBackgroundImage(image(with: color), for: .disabled)
+        }
+    }
+    
+    private func image(with color: UIColor) -> UIImage? {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(color.cgColor)
+        context?.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
     }
     
 }
