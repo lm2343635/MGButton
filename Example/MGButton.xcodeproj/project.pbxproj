@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AB3A8981CCA6F0E774ED24A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1AB3A8981CCA6F0E774ED24A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3EDB169BBB6740439110A44F /* Pods_MGButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466AEF49C71885C682C282FF /* Pods-MGButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGButton_Tests/Pods-MGButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MGButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		81A6F11D5CEACB5D78A62093 /* Pods_MGButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9722719F786147B6C30B178E /* MGButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MGButton.podspec; path = ../MGButton.podspec; sourceTree = "<group>"; };
+		9722719F786147B6C30B178E /* MGButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MGButton.podspec; path = ../MGButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD64133507E86C78439089F6 /* Pods-MGButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGButton_Tests/Pods-MGButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B67416F4C858FB5FC9EEC0BD /* Pods-MGButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGButton_Example/Pods-MGButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E7B271279213BA6DFBB1920A /* Pods-MGButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGButton_Example/Pods-MGButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EB1ACC3ED407CC6E11004E9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EB1ACC3ED407CC6E11004E9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

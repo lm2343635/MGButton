@@ -14,6 +14,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Supported porperties
 
 - cornerRadius (CGFloat)
+- normalBackgroundColor (CGFloat)
+- disabledBackgroundColor (CGFloat)
 
 ## Installation
 
@@ -21,7 +23,7 @@ MGButton is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MGButton'
+pod 'MGButton', '~> 0.2'
 ```
 
 ## Author
