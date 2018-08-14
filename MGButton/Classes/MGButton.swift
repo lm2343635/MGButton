@@ -44,8 +44,7 @@ extension UIButton {
         
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.cornerRadius, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            
-            self.layer.cornerRadius = newValue
+            layer.cornerRadius = newValue
         }
     }
     
@@ -84,8 +83,10 @@ extension UIButton {
     }
     
     private func image(with color: UIColor) -> UIImage? {
-        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        let rect = CGRect(origin: .zero, size: bounds.size)
+        let path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
         UIGraphicsBeginImageContext(rect.size)
+        path.addClip()
         let context = UIGraphicsGetCurrentContext()
         context?.setFillColor(color.cgColor)
         context?.fill(rect)
